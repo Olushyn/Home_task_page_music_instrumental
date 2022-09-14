@@ -4,6 +4,7 @@
 #page-wrapper {
     font-family: 'Montserrat', sans-serif;
     color: rgb(212, 241, 43);
+    
 }
 body {
     background-image: url(../img/star-wars-backgrounds.jpg);
@@ -17,6 +18,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 15px;
+  margin: 20px 150px 50px 150px;
+  
+
+ 
 }
 header ul {
     font-size: 32px;
@@ -54,7 +59,11 @@ header ul {
   header a:hover::before {
     width: 100%;
   }
-
+.container {
+  max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
   #hero {
     display: flex;
     flex-direction: column;
@@ -119,6 +128,7 @@ header ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 600px;
   }
 
   .level {
@@ -129,9 +139,20 @@ header ul {
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 15px;
+    
+}
+.pricing-h2 {
+  padding-top: 150px;
+  color: rgb(251, 255, 6);
+  font-size: 30px;
+}
+
+.pricing-ol {
+  color: rgb(204, 30, 181);
+  font-size: 15px;
 }
 .level:hover {
-  color: white;
+  color: rgb(189, 39, 39);
 }
 
 .product {
@@ -143,4 +164,80 @@ header ul {
   margin: 10px;
   border: 1px solid rgb(236, 225, 64);
   border-radius: 15px;
+  
+  /*background-image: url(../img/1.jpg);*/
+}
+#tenor {
+  background-image: url(../img/1.jpg);
+}
+#bass {
+  background-image: url(../img/2.jpg);
+}
+#valve {
+  background-image: url(../img/3.jpg);
+}
+
+.btn {
+  border: 0;
+  margin: 15px 0;
+  font-weight: 400;
+  border-radius: 20px;
+    background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+    color:rgb(24, 23, 23);
+    font-size: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  margin-left: 670px;
+  border: 1px solid rgb(236, 225, 64);
+  border-radius: 15px;
+    padding: 20px;
+    
+}
+.footer-ul {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+.footer-li {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(211, 199, 28);
+  font-size: 20px;
+  padding: 0 10px;
+ 
+}
+footer a {
+  background-image: linear-gradient(
+    to right,
+    rgb(206, 89, 43),
+    rgb(115, 94, 192) 50%,
+    #c5d817 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+footer a:hover {
+  background-position: 0;
+}
+
+footer a:hover::before {
+  width: 100%;
+}
+
+.footer-span {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
 }
